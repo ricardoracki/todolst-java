@@ -1,9 +1,9 @@
 FROM ubuntu:latest as build
 
 RUN apt-get update
-RUN apt-get install openjdk-1-jdk -y
+RUN apt-get install openjdk-17-jdk -y
 
-FROM openjdk:1-jdk-sliim
+FROM openjdk:17-jdk-sliim
 
 COPY . .
 
